@@ -22,6 +22,7 @@ services:
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix:cached
       - ../ros2_ws:/ros2_ws:cached
+      - /home/ksj/PX4-Autopilot:/PX4-Autopilot:cached
       - vscode-extensions:/root/.vscode-server/extensions:cached
       - /dev/dri:/dev/dri
     devices:
@@ -53,6 +54,7 @@ services:
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix:cached
       - ../ros2_ws:/ros2_ws:cached
+      - ../PX4-Autopilot:/home/ksj/PX4-Autopilot:cached
       - /dev/dri:/dev/dri
     devices:
       - /dev/dri:/dev/dri
@@ -83,6 +85,7 @@ services:
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix:cached
       - ../ros2_ws:/ros2_ws:cached
+      - ../PX4-Autopilot:/home/ksj/PX4-Autopilot:cached
       - /dev/dri:/dev/dri
     devices:
       - /dev/dri:/dev/dri
